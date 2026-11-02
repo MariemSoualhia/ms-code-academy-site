@@ -89,6 +89,14 @@ const students: Student[] = [
     photo: "/eleves/profil.jpg",
     testimonial: "Votre témoignage ici...",
   },
+  {
+    id: 9,
+    name: "Hiba Bechewech",
+    year: "2025",
+    score: "14/20",
+    photo: "/eleves/profil.jpg",
+    testimonial: "Votre témoignage ici...",
+  },
 ];
 
 const promotions = ["Toutes", "2025", "2026"] as const;
