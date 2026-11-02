@@ -11,10 +11,7 @@ const links = [
   { label: "Formations", href: "/formations" },
   { label: "À propos", href: "/a-propos" },
   { label: "Ressources", href: "/ressources" },
-  {
-    label: "Nos réussites",
-    href: "/reussites",
-  },
+  { label: "Nos réussites", href: "/reussites" },
   { label: "Contact", href: "/contact" },
 ];
 
