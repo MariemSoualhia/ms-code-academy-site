@@ -78,7 +78,7 @@ const students: Student[] = [
     name: "Sinda Ben Slimen",
     year: "2025",
     score: "16/20",
-    photo: "/eleves/sinda",
+    photo: "/eleves/sinda.png",
     testimonial:
       "Une expérience que je n'oublierai jamais ! Les cours étaient bien organisés, les exercices progressifs et les corrections très utiles pour comprendre nos erreurs. Mais ce qui a rendu cette expérience spéciale, c'est surtout la relation avec Mariem. On se sent à l'aise avec elle, on peut discuter, poser des questions et même plaisanter tout en travaillant sérieusement. Chwaya chwaya, les notions difficiles sont devenues plus faciles. Merci pour tout ce que vous nous avez appris et pour votre soutien jusqu'au Bac ! ❤️",
   },
