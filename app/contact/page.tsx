@@ -1,6 +1,13 @@
 import Link from "next/link";
 import type { ComponentType, SVGProps } from "react";
-import { MessageCircle, AtSign, MapPin, ArrowRight, Send } from "lucide-react";
+import {
+  MessageCircle,
+  AtSign,
+  MapPin,
+  ArrowRight,
+  Send,
+  Mail,
+} from "lucide-react";
 import Reveal from "../components/Reveal";
 
 type SocialIconProps = SVGProps<SVGSVGElement> & {
@@ -81,7 +88,7 @@ const contacts: ContactItem[] = [
     title: "Facebook",
     description: "Retrouvez nos annonces et nos activités.",
     label: "Voir notre Facebook",
-    href: "https://www.facebook.com//maryem.sh.5074/",
+    href: "https://www.facebook.com/maryem.sh.5074/",
     color: "bg-blue-600",
   },
   {
@@ -91,6 +98,14 @@ const contacts: ContactItem[] = [
     label: "Voir notre Instagram",
     href: "https://www.instagram.com/mariem.sh/",
     color: "bg-pink-500",
+  },
+  {
+    icon: Mail,
+    title: "E-mail",
+    description: "Pour toute demande d'information ou collaboration.",
+    label: "Envoyer un e-mail",
+    href: "mailto:soualhiamariem@gmail.com",
+    color: "bg-violet-600",
   },
 ];
 
@@ -145,14 +160,14 @@ export default function ContactPage() {
           </Reveal>
 
           {/* CONTACT CARDS */}
-          <div className="grid gap-7 md:grid-cols-3">
+          <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
             {contacts.map((contact, index) => {
               const Icon = contact.icon;
 
               return (
                 <Reveal
                   key={contact.title}
-                  delay={index * 150}
+                  delay={index * 100}
                   className="h-full"
                 >
                   <article className="group h-full rounded-3xl border border-gray-100 bg-white p-8 shadow-lg shadow-violet-100/40 transition-all duration-500 hover:-translate-y-3 hover:border-violet-200 hover:shadow-2xl hover:shadow-violet-200/50">
@@ -172,8 +187,12 @@ export default function ContactPage() {
 
                     <a
                       href={contact.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target={contact.title === "E-mail" ? undefined : "_blank"}
+                      rel={
+                        contact.title === "E-mail"
+                          ? undefined
+                          : "noopener noreferrer"
+                      }
                       className="inline-flex items-center gap-2 font-semibold text-violet-700 transition-all duration-300 hover:gap-4"
                     >
                       {contact.label}
@@ -245,7 +264,7 @@ export default function ContactPage() {
                   </div>
                 </Reveal>
 
-                <Reveal direction="right" delay={250}>
+                <Reveal direction="right" delay={200}>
                   <div className="group flex items-start gap-4 rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-violet-100 text-violet-700 transition-transform duration-300 group-hover:scale-110">
                       <AtSign size={23} />
@@ -259,6 +278,25 @@ export default function ContactPage() {
                       </p>
                     </div>
                   </div>
+                </Reveal>
+
+                <Reveal direction="right" delay={300}>
+                  <a
+                    href="mailto:soualhiamariem@gmail.com"
+                    className="group flex items-start gap-4 rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-violet-100 text-violet-700 transition-transform duration-300 group-hover:scale-110">
+                      <Mail size={23} />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-[#191536]">
+                        Notre adresse e-mail
+                      </h3>
+                      <p className="mt-1 break-all text-sm leading-6 text-gray-500 transition-colors group-hover:text-violet-700">
+                        soualhiamariem@gmail.com
+                      </p>
+                    </div>
+                  </a>
                 </Reveal>
 
                 <Reveal direction="right" delay={400}>
