@@ -69,7 +69,7 @@ const students: Student[] = [
     name: "Rahma Boukid",
     year: "2026",
     score: "16/20",
-    photo: "/eleves/profil.jpg",
+    photo: "/eleves/rahma.jpg",
     testimonial:
       "Je suis très contente d'avoir vécu cette expérience avec Mariem. Au début, j'avais parfois des difficultés à suivre certains exercices, ama elle prenait toujours le temps de réexpliquer jusqu'à ce qu'on comprenne. Ce que j'aime chez elle, c'est qu'elle croit en ses élèves et qu'elle sait trouver les mots pour nous redonner confiance. Même quand on doute de nous-mêmes, elle nous rappelle qu'on est capables de réussir. Merci pour votre gentillesse, votre patience et tous ces beaux souvenirs. ❤️",
   },
