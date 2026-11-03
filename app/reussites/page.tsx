@@ -96,7 +96,7 @@ const students: Student[] = [
     name: "Zaineb Jawadi",
     year: "2025",
     score: "13/20",
-    photo: "/eleves/profil.jpg",
+    photo: "/eleves/zaineb.png",
     testimonial:
       "Ce que j'ai appris avec Mariem dépasse les cours d'algorithmique. J'ai appris à être plus autonome, à ne pas paniquer devant un exercice et surtout à chercher mes erreurs au lieu d'attendre directement la réponse. Elle a toujours été à l'écoute et proche de nous, même quand on avait besoin d'un petit encouragement. Marra marra on était stressés, mais elle savait toujours nous rassurer et nous redonner le sourire. Merci pour votre patience et pour avoir été à nos côtés jusqu'au bout ! ❤️",
   },
